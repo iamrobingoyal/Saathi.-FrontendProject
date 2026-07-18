@@ -1,0 +1,203 @@
+{
+  "brand": "Saathi.",
+  "tagline": "Always by your side.",
+  "nav": {
+    "home": "Home",
+    "learn": "Learn",
+    "safety": "Safety",
+    "support": "Support",
+    "language": "Language",
+    "dashboard": "Dashboard",
+    "settings": "Settings"
+  },
+  "landing": {
+    "heroTitle": "Banking shouldn't feel complicated.",
+    "heroSubtitle": "Whether it's your first digital payment or your hundredth, Saathi guides you every step of the way.",
+    "getStarted": "Get Started",
+    "explore": "Explore Features",
+    "featuresTitle": "Everything you need, simply.",
+    "whyTitle": "Why Saathi",
+    "whySubtitle": "A guided path from curiosity to confidence.",
+    "testimonialsTitle": "People trust Saathi",
+    "feature1Title": "Multiple Languages",
+    "feature1Desc": "Choose your preferred language.",
+    "feature2Title": "Voice Guidance",
+    "feature2Desc": "Navigate with your voice.",
+    "feature3Title": "Stay Safe",
+    "feature3Desc": "Learn how to avoid scams.",
+    "feature4Title": "Nearby Banking",
+    "feature4Desc": "Locate ATMs and banks.",
+    "step1": "Open",
+    "step1Desc": "A warm welcome in your language.",
+    "step2": "Learn",
+    "step2Desc": "Understand banking, one concept at a time.",
+    "step3": "Practice",
+    "step3Desc": "Try transfers and quizzes safely.",
+    "step4": "Use Banking",
+    "step4Desc": "Check balances and send money.",
+    "step5": "Stay Safe",
+    "step5Desc": "Recognize scams before they reach you.",
+    "t1Name": "Sunita Devi",
+    "t1Text": "I sent money to my son for the first time. Saathi made it feel easy.",
+    "t2Name": "Ramesh Patel",
+    "t2Text": "The safety tips saved me from a fake OTP call.",
+    "t3Name": "Lakshmi N.",
+    "t3Text": "Voice guidance in Tamil helped me learn UPI without fear.",
+    "illustrationAlt": "A village family using a phone together with Saathi"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Saathi.",
+    "askLanguage": "Which language makes you feel at home?",
+    "greeting": "Hello! I'm Saathi. Banking can feel confusing at first—but you're not alone. I'll guide you, one step at a time.",
+    "continue": "Continue"
+  },
+  "language": {
+    "title": "Choose your language",
+    "subtitle": "You can change this anytime in Settings.",
+    "hear": "Hear sample"
+  },
+  "dashboard": {
+    "greetingMorning": "Good Morning",
+    "greetingAfternoon": "Good Afternoon",
+    "greetingEvening": "Good Evening",
+    "helpToday": "How can Saathi help today?",
+    "checkBalance": "Check Balance",
+    "sendMoney": "Send Money",
+    "receiveMoney": "Receive Money",
+    "nearbyAtm": "Nearby ATM",
+    "learnBanking": "Learn Banking",
+    "staySafe": "Stay Safe",
+    "dailyTip": "Daily Tip",
+    "tipText": "Never share your OTP with anyone — not even bank staff.",
+    "readMore": "Read More",
+    "learningJourney": "Learning Journey",
+    "voiceAssistant": "Voice Assistant"
+  },
+  "balance": {
+    "title": "Your Balance",
+    "savings": "Savings Account",
+    "available": "Available balance",
+    "transactions": "Recent transactions",
+    "credit": "Received",
+    "debit": "Spent"
+  },
+  "transfer": {
+    "title": "Send Money",
+    "step1": "Choose Person",
+    "step2": "Enter Amount",
+    "step3": "Confirm",
+    "step4": "Done",
+    "chooseContact": "Who are you sending to?",
+    "enterAmount": "How much do you want to send?",
+    "confirmTitle": "Please confirm",
+    "to": "To",
+    "amount": "Amount",
+    "confirmBtn": "Confirm & Send",
+    "success": "Money sent successfully!",
+    "successDesc": "Saathi guided you through every step. Well done.",
+    "another": "Send another",
+    "backHome": "Back to Home",
+    "next": "Next",
+    "back": "Back"
+  },
+  "learn": {
+    "title": "Learn Banking",
+    "subtitle": "Simple lessons. No jargon.",
+    "start": "Start lesson",
+    "quiz": "Take quiz",
+    "completed": "Completed",
+    "listen": "Listen",
+    "upi": { "title": "UPI", "desc": "Pay anyone instantly using a UPI ID or QR code." },
+    "atm": { "title": "ATM", "desc": "Withdraw cash safely using your card and PIN." },
+    "pin": { "title": "PIN", "desc": "A secret number that protects your card and account." },
+    "otp": { "title": "OTP", "desc": "A one-time code. Never share it with anyone." },
+    "interest": { "title": "Interest", "desc": "Extra money your savings can earn over time." },
+    "loan": { "title": "Loan", "desc": "Borrowing money and paying it back with care." },
+    "insurance": { "title": "Insurance", "desc": "Protection for you and your family when life surprises you." }
+  },
+  "safety": {
+    "title": "Safety Center",
+    "subtitle": "Learn scams. Stay protected.",
+    "whatHappened": "What happened?",
+    "whatToDo": "What should you do?",
+    "practice": "Practice Quiz",
+    "fakeCalls": {
+      "title": "Fake Calls",
+      "story": "Someone calls claiming to be from your bank and asks for your card details.",
+      "action": "Hang up. Call your bank using the number on your card or passbook."
+    },
+    "otpScam": {
+      "title": "OTP Scam",
+      "story": "A stranger asks you to share the OTP that just arrived on your phone.",
+      "action": "Never share OTP. Banks never ask for it over phone or message."
+    },
+    "qrScam": {
+      "title": "QR Scam",
+      "story": "Someone asks you to scan their QR to 'receive' money.",
+      "action": "Only scan QR codes when you are paying. Receiving money does not need your scan."
+    },
+    "lotteryScam": {
+      "title": "Lottery Scam",
+      "story": "A message says you won a prize and need to pay a fee to claim it.",
+      "action": "Ignore and delete. Real prizes never ask you to pay first."
+    }
+  },
+  "nearby": {
+    "title": "Nearby Banking",
+    "subtitle": "Find help close to you.",
+    "search": "Search places…",
+    "atm": "ATM",
+    "bank": "Bank",
+    "csc": "CSC",
+    "post": "Post Office",
+    "distance": "away",
+    "directions": "Directions"
+  },
+  "voice": {
+    "title": "Voice Assistant",
+    "subtitle": "Talk to Saathi. Hands-free help.",
+    "press": "Press to speak",
+    "listening": "Listening…",
+    "processing": "Thinking…",
+    "hint": "Try: \"Check my balance\" or \"How do I stay safe?\""
+  },
+  "help": {
+    "title": "Help Center",
+    "subtitle": "We're here when you need us.",
+    "faqs": "FAQs",
+    "call": "Call Support",
+    "chat": "Live Chat",
+    "emergency": "Emergency",
+    "faq1q": "Is Saathi a real bank?",
+    "faq1a": "Saathi is a companion that helps you learn and practice banking safely. Connect your real bank separately.",
+    "faq2q": "Can I change language later?",
+    "faq2a": "Yes. Open Settings anytime and pick a new language.",
+    "faq3q": "What if I make a mistake sending money?",
+    "faq3a": "Always confirm the name and amount. If something goes wrong, contact your bank immediately."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "highContrast": "High Contrast",
+    "fontSize": "Font Size",
+    "voiceMode": "Voice Mode",
+    "notifications": "Notifications",
+    "accessibility": "Accessibility",
+    "smaller": "A",
+    "larger": "A",
+    "resetTour": "Replay welcome tour"
+  },
+  "common": {
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "loading": "Loading…",
+    "rupee": "₹"
+  },
+  "footer": {
+    "rights": "Made with care for first-time digital users.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}
