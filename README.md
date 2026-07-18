@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Saathi.
 
 **Always by your side.**
@@ -31,3 +32,6 @@ Landing → Onboarding (language wow moment) → Dashboard → Balance, Transfer
 ## Accessibility
 
 Keyboard navigation, screen-reader labels, dark mode, high contrast, font scaling, voice reading, semantic HTML, visible focus states.
+=======
+# Index-finger-tracker
+>>>>>>> 8287f59cbe1f51e13ffecaee7e71a306fc7883b6
