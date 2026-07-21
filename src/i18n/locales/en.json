@@ -188,6 +188,28 @@
     "larger": "A",
     "resetTour": "Replay welcome tour"
   },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email Address",
+    "password": "Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "emailOrPhone": "Email or Phone Number",
+    "forgotPassword": "Forgot Password?",
+    "recover": "Recover Password",
+    "enterDetails": "Enter your email or phone number to recover your password",
+    "recoverySuccess": "Identity verified! Your password is: {{password}}",
+    "recoveryFailed": "No matching account found.",
+    "or": "or",
+    "needAccount": "Need an account? Sign Up",
+    "haveAccount": "Already have an account? Login",
+    "loginSuccess": "Logged in successfully!",
+    "signupSuccess": "Registered successfully!",
+    "logout": "Logout",
+    "userNotFound": "User not found. Please sign up.",
+    "invalidPassword": "Incorrect password. Try again."
+  },
   "common": {
     "back": "Back",
     "close": "Close",

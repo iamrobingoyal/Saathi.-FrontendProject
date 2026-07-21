@@ -1,8 +1,11 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { AppLayout } from '../components/layout/AppLayout'
+import { ProtectedRoute } from './ProtectedRoute'
 
 const Landing = lazy(() => import('../pages/Landing/Landing'))
+const Login = lazy(() => import('../pages/Auth/Login'))
+const SignUp = lazy(() => import('../pages/Auth/SignUp'))
 const Onboarding = lazy(() => import('../pages/Language/Onboarding'))
 const LanguagePage = lazy(() => import('../pages/Language/LanguagePage'))
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'))
@@ -30,17 +33,24 @@ export function AppRoutes() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Landing />} />
-          <Route path="onboarding" element={<Onboarding />} />
-          <Route path="language" element={<LanguagePage />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="balance" element={<Balance />} />
-          <Route path="transfer" element={<Transfer />} />
-          <Route path="learn" element={<Learn />} />
-          <Route path="safety" element={<Safety />} />
-          <Route path="nearby" element={<Nearby />} />
-          <Route path="voice" element={<Voice />} />
-          <Route path="help" element={<Help />} />
-          <Route path="settings" element={<Settings />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+
+          {/* Protected Area */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="onboarding" element={<Onboarding />} />
+            <Route path="language" element={<LanguagePage />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="balance" element={<Balance />} />
+            <Route path="transfer" element={<Transfer />} />
+            <Route path="learn" element={<Learn />} />
+            <Route path="safety" element={<Safety />} />
+            <Route path="nearby" element={<Nearby />} />
+            <Route path="voice" element={<Voice />} />
+            <Route path="help" element={<Help />} />
+            <Route path="settings" element={<Settings />} />
+          </Route>
+
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

@@ -46,7 +46,7 @@ export function AppLayout() {
           <Outlet />
         </motion.main>
       </AnimatePresence>
-      <Footer />
+      {location.pathname === '/' && <Footer />}
       <Toaster
         position="bottom-center"
         toastOptions={{

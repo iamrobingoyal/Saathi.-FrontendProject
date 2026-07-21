@@ -5,6 +5,7 @@ import { Card } from '../../components/cards/Card'
 import { Button } from '../../components/buttons/Button'
 import { LanguageGrid } from '../../components/language/LanguageGrid'
 import { useSettingsStore } from '../../store/useStore'
+import { useAuthStore } from '../../store/useAuthStore'
 import i18n from '../../i18n'
 import { cn } from '../../utils/helpers'
 import toast from 'react-hot-toast'
@@ -35,6 +36,7 @@ function Toggle({ checked, onChange, label }) {
 export default function Settings() {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const logout = useAuthStore((s) => s.logout)
   const {
     language,
     setLanguage,
@@ -130,6 +132,15 @@ export default function Settings() {
           }}
         >
           {t('settings.resetTour')}
+        </Button>
+        <Button
+          variant="secondary"
+          onClick={() => {
+            logout()
+            navigate('/')
+          }}
+        >
+          {t('auth.logout')}
         </Button>
         <Button onClick={() => navigate('/dashboard')}>{t('common.save')}</Button>
       </div>

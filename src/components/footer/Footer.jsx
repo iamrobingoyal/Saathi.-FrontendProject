@@ -12,21 +12,7 @@ export function Footer() {
           <p className="text-sm text-muted mt-1">{t('tagline')}</p>
         </div>
 
-        {/* Hackathon Team Info */}
-        <div className="text-sm border-l-2 border-soft pl-4 py-1 text-muted">
-          <div className="flex items-center gap-1">
-            <span className="font-semibold text-ink">Team:</span>
-            <span>Komagata Maru</span>
-          </div>
-          <div className="flex items-center gap-1 mt-0.5">
-            <span className="font-semibold text-ink">Members:</span>
-            <span>Surbhi, Robin Goyal</span>
-          </div>
-          <div className="flex items-center gap-1 mt-0.5">
-            <span className="font-semibold text-ink">Problem Statement:</span>
-            <span className="font-number">FIN-03</span>
-          </div>
-        </div>
+
 
         <div className="flex flex-col items-start md:items-end gap-2">
           <p className="text-sm text-muted">{t('footer.rights')}</p>

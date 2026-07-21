@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Menu, Moon, Sun, X, Globe } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSettingsStore } from '../../store/useStore'
+import { useAuthStore } from '../../store/useAuthStore'
 import { Button } from '../buttons/Button'
 
 const links = [
@@ -19,6 +20,8 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
   const darkMode = useSettingsStore((s) => s.darkMode)
   const toggleDarkMode = useSettingsStore((s) => s.toggleDarkMode)
+  const currentUser = useAuthStore((s) => s.currentUser)
+  const logout = useAuthStore((s) => s.logout)
 
   const hideOn = ['/language', '/onboarding']
   if (hideOn.includes(location.pathname)) return null
@@ -75,9 +78,24 @@ export function Navbar() {
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          <Link to="/dashboard" className="hidden sm:block">
-            <Button size="sm">{t('nav.dashboard')}</Button>
-          </Link>
+          {currentUser ? (
+            <div className="hidden sm:flex items-center gap-2">
+              <Link to="/dashboard">
+                <Button size="sm">{t('nav.dashboard')}</Button>
+              </Link>
+              <button
+                type="button"
+                onClick={logout}
+                className="px-3 py-1.5 rounded-xl text-sm font-medium text-muted hover:text-ink hover:bg-[var(--saathi-border)]/40 transition-colors"
+              >
+                {t('auth.logout')}
+              </button>
+            </div>
+          ) : (
+            <Link to="/login" className="hidden sm:block">
+              <Button size="sm">{t('auth.login')}</Button>
+            </Link>
+          )}
 
           <button
             type="button"
@@ -123,24 +141,50 @@ export function Navbar() {
                   {t('nav.language')}
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/dashboard"
-                  onClick={() => setOpen(false)}
-                  className="block px-3 py-3 rounded-xl text-brand font-semibold"
-                >
-                  {t('nav.dashboard')}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/settings"
-                  onClick={() => setOpen(false)}
-                  className="block px-3 py-3 rounded-xl text-ink font-medium"
-                >
-                  {t('nav.settings')}
-                </NavLink>
-              </li>
+              {currentUser ? (
+                <>
+                  <li>
+                    <NavLink
+                      to="/dashboard"
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-3 rounded-xl text-brand font-semibold"
+                    >
+                      {t('nav.dashboard')}
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/settings"
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-3 rounded-xl text-ink font-medium"
+                    >
+                      {t('nav.settings')}
+                    </NavLink>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        logout()
+                        setOpen(false)
+                      }}
+                      className="w-full text-left block px-3 py-3 rounded-xl text-muted font-medium"
+                    >
+                      {t('auth.logout')} ({currentUser.name})
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <li>
+                  <NavLink
+                    to="/login"
+                    onClick={() => setOpen(false)}
+                    className="block px-3 py-3 rounded-xl text-brand font-semibold"
+                  >
+                    {t('auth.login')}
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </motion.div>
         )}
